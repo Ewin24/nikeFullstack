@@ -14,7 +14,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public ICarrito _carrito;
-    public ICarrito Carrito
+    public ICarrito Carritos
     {
         get
         {
@@ -27,7 +27,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public ICategoria _categoria;
-    public ICategoria Categoria
+    public ICategoria Categorias
     {
         get
         {
@@ -40,7 +40,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IDetalleCarrito _detalleCarrito;
-    public IDetalleCarrito DetalleCarrito
+    public IDetalleCarrito DetalleCarritos
     {
         get
         {
@@ -53,7 +53,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IDetalleOrden _detalleOrden;
-    public IDetalleOrden DetalleOrden
+    public IDetalleOrden DetalleOrdenes
     {
         get
         {
@@ -66,7 +66,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IInventario _inventario;
-    public IInventario Inventario
+    public IInventario Inventarios
     {
         get
         {
@@ -79,7 +79,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IOrden _orden;
-    public IOrden Orden
+    public IOrden Ordenes
     {
         get
         {
@@ -92,7 +92,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IPersona _persona;
-    public IPersona Persona
+    public IPersona Personas
     {
         get
         {
@@ -105,7 +105,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IProducto _producto;
-    public IProducto Producto
+    public IProducto Productos
     {
         get
         {
@@ -118,7 +118,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public IUsuario _usuario;
-    public IUsuario Usuario
+    public IUsuario Usuarios
     {
         get
         {
