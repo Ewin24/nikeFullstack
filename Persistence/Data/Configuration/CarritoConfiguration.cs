@@ -12,13 +12,13 @@ namespace Persistence.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Carrito> builder)
         {
-            builder.HasKey(e => e.IdCarrito).HasName("PRIMARY");
+            builder.HasKey(e => e.Id).HasName("PRIMARY");
 
             builder.ToTable("carrito");
 
             builder.HasIndex(e => e.UsuarioIdusuario, "fk_Carrito_usuario1_idx");
 
-            builder.Property(e => e.IdCarrito)
+            builder.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("idCarrito");
             builder.Property(e => e.UsuarioIdusuario).HasColumnName("usuario_idusuario");

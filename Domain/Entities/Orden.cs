@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Orden
+public partial class Orden: BaseEntity
 {
-    public int IdOrden { get; set; }
+    // public int IdOrden { get; set; }
 
     public DateOnly? FechaOrden { get; set; }
 

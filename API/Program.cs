@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Persistence.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,11 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// builder.Services.AddDbContext<ProyectoDotnetContext>(options =>
-// {
-//     string connectionString = builder.Configuration.GetConnectionString("MySQLConex");
-//     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-// });n
+builder.Services.AddDbContext<DotnetContext>(options =>
+{
+    string connectionString = builder.Configuration.GetConnectionString("MySQLConex");
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 
 var app = builder.Build();
 

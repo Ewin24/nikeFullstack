@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Inventario
+public partial class Inventario : BaseEntity
 {
-    public int IdInventario { get; set; }
+    // public int IdInventario { get; set; }
 
     public int? Existencias { get; set; }
 

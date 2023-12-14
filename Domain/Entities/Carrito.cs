@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Carrito
+public partial class Carrito : BaseEntity
 {
-    public int IdCarrito { get; set; }
+    // public int Id { get; set; }
 
     public DateOnly? FechaCreacion { get; set; }
 

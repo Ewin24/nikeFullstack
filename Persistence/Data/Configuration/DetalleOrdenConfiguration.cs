@@ -12,7 +12,7 @@ namespace Persistence.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Detalleorden> builder)
         {
-            builder.HasKey(e => e.IdDetalleOrden).HasName("PRIMARY");
+            builder.HasKey(e => e.Id).HasName("PRIMARY");
 
             builder.ToTable("detalleorden");
 
@@ -20,7 +20,7 @@ namespace Persistence.Data.Configuration
 
             builder.HasIndex(e => e.ProductoIdProducto, "fk_DetalleOrden_Producto1_idx");
 
-            builder.Property(e => e.IdDetalleOrden)
+            builder.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("idDetalleOrden");
             builder.Property(e => e.Cantidad).HasColumnName("cantidad");

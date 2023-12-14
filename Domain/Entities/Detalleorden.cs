@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Detalleorden
+public partial class Detalleorden : BaseEntity
 {
-    public int IdDetalleOrden { get; set; }
+    // public int IdDetalleOrden { get; set; }
 
     public int? Cantidad { get; set; }
 

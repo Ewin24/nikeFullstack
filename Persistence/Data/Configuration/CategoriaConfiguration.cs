@@ -14,11 +14,11 @@ namespace Persistence.Data.Configuration
 
         public void Configure(EntityTypeBuilder<Categoria> builder)
         {
-            builder.HasKey(e => e.IdCategoria).HasName("PRIMARY");
+            builder.HasKey(e => e.Id).HasName("PRIMARY");
 
             builder.ToTable("categoria");
 
-            builder.Property(e => e.IdCategoria)
+            builder.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("idCategoria");
             builder.Property(e => e.Nombre).HasMaxLength(45);

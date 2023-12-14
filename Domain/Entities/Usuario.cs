@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Usuario
+public partial class Usuario : BaseEntity
 {
-    public int Idusuario { get; set; }
+    // public int Idusuario { get; set; }
 
     public string? Contraseña { get; set; }
 

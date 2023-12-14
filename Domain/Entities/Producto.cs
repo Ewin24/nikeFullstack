@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Producto
+public partial class Producto: BaseEntity
 {
-    public int IdProducto { get; set; }
+    // public int IdProducto { get; set; }
 
     public string? Nombre { get; set; }
 
