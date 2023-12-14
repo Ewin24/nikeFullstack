@@ -16,7 +16,7 @@ h6 {
 
 p {
     font-size: 16px;
-    color: dark gray;
+    color: dark rgb(0, 0, 0);
     margin: 15px 0 20px 0;
 }
 
@@ -81,7 +81,7 @@ p {
 /* Home Page */
 
 #hero {
-    background-image: url("assets/hero3.jpg");
+    background-image: url("assets/hero3.png");
     height: 90vh;
     width: 100%;
     background-size: 100%;
@@ -92,6 +92,7 @@ p {
     justify-content: center;
     margin-bottom: 5px;
     background-repeat: no-repeat;
+    color: #0b0b0b;
 }
 
 button {
