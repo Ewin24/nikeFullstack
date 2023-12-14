@@ -14,8 +14,5 @@ namespace API.Dtos
 
         public int UsuarioIdusuario { get; set; }
 
-        public virtual ICollection<Detallecarrito> Detallecarritos { get; set; } = new List<Detallecarrito>();
-
-        public virtual Usuario UsuarioIdusuarioNavigation { get; set; } = null!;
     }
 }

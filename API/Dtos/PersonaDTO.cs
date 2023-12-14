@@ -13,7 +13,5 @@ namespace API.Dtos
         public string? Nombre { get; set; }
 
         public string? Apellido { get; set; }
-
-        public virtual ICollection<Usuario> Usuarios { get; set; } = new List<Usuario>();
     }
 }

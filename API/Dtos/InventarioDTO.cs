@@ -15,7 +15,5 @@ namespace API.Dtos
         public DateOnly? FechaActualizacion { get; set; }
 
         public int ProductoIdProducto { get; set; }
-
-        public virtual Producto ProductoIdProductoNavigation { get; set; } = null!;
     }
 }

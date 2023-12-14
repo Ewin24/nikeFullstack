@@ -10,8 +10,9 @@ builder.Services.AddControllers();
 builder.Services.ConfigureRateLimiting();
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.ConfigureCors();
-builder.Services.AddAplicationServices();
+builder.Services.AddApplicationServices();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddJwt(builder.Configuration);
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DotnetContext>(options =>
@@ -31,6 +32,7 @@ app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.UseIpRateLimiting();
 app.UseAuthorization();
+app.UseAuthentication();
 app.MapControllers();
 
 app.Run();

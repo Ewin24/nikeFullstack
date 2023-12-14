@@ -15,9 +15,5 @@ namespace API.Dtos
         public int CarritoIdCarrito { get; set; }
 
         public int ProductoIdProducto { get; set; }
-
-        public virtual Carrito CarritoIdCarritoNavigation { get; set; } = null!;
-
-        public virtual Producto ProductoIdProductoNavigation { get; set; } = null!;
     }
 }

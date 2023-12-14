@@ -15,9 +15,5 @@ namespace API.Dtos
         public double? Total { get; set; }
 
         public int UsuarioIdusuario { get; set; }
-
-        public virtual ICollection<Detalleorden> Detalleordens { get; set; } = new List<Detalleorden>();
-
-        public virtual Usuario UsuarioIdusuarioNavigation { get; set; } = null!;
     }
 }

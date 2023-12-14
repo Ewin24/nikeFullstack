@@ -17,11 +17,5 @@ namespace API.Dtos
         public string? Correo { get; set; }
 
         public string? Celular { get; set; }
-
-        public virtual ICollection<Carrito> Carritos { get; set; } = new List<Carrito>();
-
-        public virtual ICollection<Orden> Ordens { get; set; } = new List<Orden>();
-
-        public virtual Persona PersonaIdPersonaNavigation { get; set; } = null!;
     }
 }

@@ -17,9 +17,5 @@ namespace API.Dtos
         public int OrdenIdOrden { get; set; }
 
         public int ProductoIdProducto { get; set; }
-
-        public virtual Orden OrdenIdOrdenNavigation { get; set; } = null!;
-
-        public virtual Producto ProductoIdProductoNavigation { get; set; } = null!;
     }
 }
